@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Melodía Escrita - Vídeos de letras de música cristiana para alabar a Dios. Más de 10,000 seguidores. TikTok, YouTube, Instagram y más.">
+    <meta name="keywords" content="música cristiana, alabanzas, letras cristianas, adoración, Melodía Escrita">
+    <meta name="author" content="Melodía Escrita">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://melodiaescrita.com/">
+    <meta property="og:title" content="Melodía Escrita | Alabanzas y Letras">
+    <meta property="og:description" content="Vídeos de letras de música cristiana para alabar a Dios en cualquier momento y lugar.">
+    <meta property="og:image" content="Photos/MelodLogo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://melodiaescrita.com/">
+    <meta property="twitter:title" content="Melodía Escrita | Alabanzas y Letras">
+    <meta property="twitter:description" content="Vídeos de letras de música cristiana para alabar a Dios en cualquier momento y lugar.">
+    <meta property="twitter:image" content="Photos/MelodLogo.png">
+    
+    <title>Melodía Escrita | Alabanzas y Letras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Photos/MelodLogo.png" alt="Logo de Melodía Escrita" class="logo">
+            <h1>Melodía Escrita</h1>
+        </div>
+    </header>
+
+    <nav class="navegacion-principal" role="navigation" aria-label="Navegación principal">
+        <a href="index.html" class="activo" aria-current="page">Inicio</a>
+        <a href="creador.html">Sobre el Creador</a>
+        <a href="videos.html">Todos los Vídeos</a>
+        <a href="donaciones.html">Donaciones</a>
+        <a href="letras.html">Letras</a>
+        <a href="consejos.html">Consejo para creadores</a>
+    </nav>
+
+    <main>
+        <!-- 
+            ============================================
+            ACTUALIZACIÓN DE ESTADÍSTICAS
+            ============================================
+            Para actualizar los números, solo cambia el valor en "data-valor":
+            
+            - Seguidores: Cambia data-valor="10000" (solo el número, sin comas)
+            - Vídeos: Cambia data-valor="100" 
+            - Vistas: Cambia data-valor="81000"
+            
+            El texto se formateará automáticamente (ej: 10000 → "10,000+")
+            El texto "hermanos" también se actualiza automáticamente.
+        -->
+        <section class="hero-section-celebracion">
+            <div class="celebracion-container">
+                <h2>¡Gracias por ser parte de esta familia!</h2>
+                <p class="celebracion-texto">Más de <strong data-estadistica="seguidores-texto" data-valor="10000">10,000 hermanos</strong> se unen cada día para adorar a Dios a través de la música</p>
+                <div class="estadisticas-grid">
+                    <div class="estadistica-item">
+                        <div class="estadistica-numero" data-estadistica="seguidores" data-valor="11000">11000</div>
+                        <div class="estadistica-label">Seguidores</div>
+                    </div>
+                    <div class="estadistica-item">
+                        <div class="estadistica-numero" data-estadistica="videos" data-valor="100">100</div>
+                        <div class="estadistica-label">Vídeos</div>
+                    </div>
+                    <div class="estadistica-item">
+                        <div class="estadistica-numero" data-estadistica="vistas" data-valor="81000">81000</div>
+                        <div class="estadistica-label">Vistas Totales</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Sobre el Proyecto</h2>
+            <p>Melodía Escrita es un espacio dedicado a la adoración. Creamos vídeos de letras de música cristiana para que puedas alabar a Dios en cualquier momento y lugar.</p>
+            <p>Nuestro objetivo es que cada vídeo sea una herramienta de edificación espiritual, llevando la Palabra de Dios a través de la música que inspira, consuela y fortalece la fe.</p>
+            <div id="mensaje" role="region" aria-live="polite" aria-label="Frase inspiradora"></div>
+            <div class="boton-container">
+                <button id="cambiarColorBtn" aria-label="Ver otra frase inspiradora">Ver otra promesa</button>
+            </div>
+        </section>
+
+        <!-- 
+            ============================================
+            ACTUALIZACIÓN DE VÍDEOS POPULARES
+            ============================================
+            Para actualizar:
+            
+            - Título: Cambia el texto dentro de <h3>
+            - Vistas: Cambia data-valor="425900" (solo el número, sin puntos ni comas)
+            - Link: Cambia el href del enlace <a>
+            
+            Ejemplo: Si un video tiene 500,000 vistas, pon data-valor="500000"
+            Se mostrará automáticamente como "500.0K Vistas"
+        -->
+        <section class="destacados">
+            <h2>Vídeos más Populares</h2>
+            <div class="grid-destacados">
+                <div class="tarjeta-video" data-video="1">
+                    <h3 data-video-titulo="1">Anhelo Conocerte</h3>
+                    <p><span data-video-vistas="1" data-valor="425900">425900</span> Vistas</p>
+                    <a href="https://www.tiktok.com/@melodia.escrita" target="_blank" rel="noopener noreferrer" aria-label="Ver Anhelo Conocerte en TikTok" data-video-link="1">Ver en TikTok</a>
+                </div>
+                <div class="tarjeta-video" data-video="2">
+                    <h3 data-video-titulo="2">Sobre alas de Paloma</h3>
+                    <p><span data-video-vistas="2" data-valor="235300">235300</span> Vistas</p>
+                    <a href="https://www.tiktok.com/@melodia.escrita" target="_blank" rel="noopener noreferrer" aria-label="Ver Sobre alas de Paloma en TikTok" data-video-link="2">Ver en TikTok</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="informacion-util">
+            <h2>¿Cómo usar este sitio?</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">🎵</div>
+                    <h3>Explora la Videoteca</h3>
+                    <p>Visita nuestra sección de <a href="videos.html">Todos los Vídeos</a> para buscar canciones por nombre, intérprete o plataforma. Encuentra tu alabanza favorita fácilmente.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">💡</div>
+                    <h3>Aprende a Crear</h3>
+                    <p>Si eres creador de contenido, visita nuestros <a href="consejos.html">Consejos para Creadores</a> y aprende técnicas profesionales de audio y diseño.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🤝</div>
+                    <h3>Únete a la Comunidad</h3>
+                    <p>Síguenos en nuestras redes sociales para recibir notificaciones de nuevos vídeos y ser parte de esta familia de adoradores.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="redes-sociales-iconos">
+            <h2>Síguenos y Apóyanos</h2>
+            <p class="redes-descripcion">Conéctate con nosotros en todas nuestras plataformas y no te pierdas ningún contenido nuevo</p>
+            <div class="contenedor-iconos" role="list">
+                <a href="https://www.tiktok.com/@melodia.escrita" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en TikTok" role="listitem">
+                    <img src="Photos/tiktok-icon.png" alt="TikTok" class="icono-red">
+                </a>
+                <a href="https://www.instagram.com/melodiaescrita2/" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Instagram" role="listitem">
+                    <img src="Photos/instagram-icon.png" alt="Instagram" class="icono-red">
+                </a>
+                <a href="https://www.youtube.com/@melodiaescrita" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en YouTube" role="listitem">
+                    <img src="Photos/youtube-icon.png" alt="YouTube" class="icono-red">
+                </a>
+                <a href="https://www.facebook.com/melodiaescrita.2" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Facebook" role="listitem">
+                    <img src="Photos/Facebook-icon.png" alt="Facebook" class="icono-red">
+                </a>
+                <a href="https://www.paypal.com/paypalme/melodiaescrita" target="_blank" rel="noopener noreferrer" aria-label="Apoya con PayPal" role="listitem">
+                    <img src="Photos/paypal-icon.png" alt="PayPal" class="icono-red">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Melodía Escrita - Inspirando a través de la alabanza</p>
+            <p class="footer-links">
+                <a href="index.html">Inicio</a> | 
+                <a href="creador.html">Sobre el Creador</a> | 
+                <a href="videos.html">Vídeos</a> | 
+                <a href="consejos.html">Consejos</a> | 
+                <a href="donaciones.html">Donaciones</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

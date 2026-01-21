@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Videoteca completa de Melodía Escrita. Busca y filtra vídeos de música cristiana por plataforma: TikTok, YouTube, Instagram y Facebook.">
+    <meta name="keywords" content="videos cristianos, música cristiana, letras, alabanzas, videoteca">
+    <meta name="author" content="Melodía Escrita">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Todos los Vídeos | Melodía Escrita">
+    <meta property="og:description" content="Videoteca completa de vídeos de música cristiana de Melodía Escrita.">
+    
+    <title>Todos los Vídeos | Melodía Escrita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Photos/MelodLogo.png" alt="Logo de Melodía Escrita" class="logo">
+            <h1>Nuestra Videoteca</h1>
+        </div>
+    </header>
+
+    <nav class="navegacion-principal" role="navigation" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="creador.html">Sobre el Creador</a>
+        <a href="videos.html" class="activo" aria-current="page">Todos los Vídeos</a>
+        <a href="donaciones.html">Donaciones</a>
+        <a href="consejos.html">Consejo para creadores</a>
+    </nav>
+
+    <main>
+        
+        <section>
+            <h2>Buscar y Filtrar Vídeos</h2>
+            
+            <div class="controles-video">
+                <label for="filtroPlataforma">Ver vídeos de:</label>
+                <select id="filtroPlataforma" aria-label="Filtrar vídeos por plataforma">
+                    <option value="todos">Todas las Plataformas</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="tiktok">TikTok</option>
+                </select>
+
+                <input type="text" id="barraBusqueda" placeholder="Buscar por Nombre de la Canción..." aria-label="Buscar vídeos">
+            </div>
+
+            <h3 id="tituloTabla">Vídeos de Melodía Escrita</h3>
+
+            <div class="contenedor-tabla">
+                <table id="tablaVideos">
+                    <thead>
+                        <tr>
+                            <th>Nombre de la Canción</th>
+                            <th>Intérprete</th> 
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                        </tbody>
+                </table>
+            </div>
+            <p id="sinResultados" style="display:none; text-align:center;">No se encontraron vídeos con ese nombre.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Melodía Escrita</p>
+    </footer>
+    <script src="videos.js"></script> </body>
+</html>

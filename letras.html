@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Letras de canciones cristianas completas. Busca letras por intérprete o nombre de canción. Melodía Escrita - Tu fuente de alabanzas.">
+    <meta name="keywords" content="letras cristianas, letras de canciones, música cristiana, alabanzas, letras completas">
+    <meta name="author" content="Melodía Escrita">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Letras de Canciones | Melodía Escrita">
+    <meta property="og:description" content="Encuentra las letras completas de tus canciones cristianas favoritas.">
+    
+    <title>Letras de Canciones | Melodía Escrita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Photos/MelodLogo.png" alt="Logo de Melodía Escrita" class="logo">
+            <h1>Letras de Canciones</h1>
+        </div>
+    </header>
+
+    <nav class="navegacion-principal" role="navigation" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="creador.html">Sobre el Creador</a>
+        <a href="videos.html">Todos los Vídeos</a>
+        <a href="letras.html" class="activo" aria-current="page">Letras</a>
+        <a href="donaciones.html">Donaciones</a>
+        <a href="consejos.html">Consejo para creadores</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Buscar Letras de Canciones</h2>
+            <p>Encuentra las letras completas de tus canciones cristianas favoritas. Busca por intérprete o por nombre de canción.</p>
+            
+            <div class="controles-letras">
+                <input 
+                    type="text" 
+                    id="barraBusquedaLetras" 
+                    placeholder="Buscar por intérprete o nombre de canción..." 
+                    aria-label="Buscar letras de canciones"
+                    class="busqueda-principal">
+            </div>
+
+            <div id="contadorResultados" class="contador-resultados"></div>
+        </section>
+
+        <section id="contenedorLetras">
+            <div id="letrasContainer">
+                <!-- Las letras se cargarán aquí dinámicamente -->
+            </div>
+            <p id="sinResultadosLetras" style="display:none; text-align:center; padding: 30px; color: #666;">
+                No se encontraron letras con ese criterio de búsqueda. Intenta con otro término.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Melodía Escrita - Inspirando a través de la alabanza</p>
+            <p class="footer-links">
+                <a href="index.html">Inicio</a> | 
+                <a href="creador.html">Sobre el Creador</a> | 
+                <a href="videos.html">Vídeos</a> | 
+                <a href="letras.html">Letras</a> | 
+                <a href="consejos.html">Consejos</a> | 
+                <a href="donaciones.html">Donaciones</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="letras.js"></script>
+</body>
+</html>
+
